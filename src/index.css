@@ -1,0 +1,23 @@
+@import "tailwindcss";
+@import "@fontsource-variable/plus-jakarta-sans";
+
+/* Colours from the Techzarinfo website (frontend/) */
+@theme {
+  --font-sans: "Plus Jakarta Sans Variable", Arial, Helvetica, sans-serif;
+
+  --color-navy: #002148; /* headings, body text, dark buttons */
+  --color-navy-mid: #003070;
+  --color-navy-deep: #00142f;
+  --color-brand: #0b57b7; /* primary blue: links, accents */
+  --color-brand-hover: #0a50a5;
+  --color-brand-deep: #0a3f8a;
+  --color-muted: #6b7aa8; /* secondary text */
+  --color-sky-tint: #f5faff; /* page background */
+  --color-sky-soft: #dcecfb;
+  --color-sky-line: #d3e3f8; /* borders */
+  --color-sky-mid: #cfe6f7;
+}
+
+body {
+  @apply bg-sky-tint font-sans text-navy antialiased;
+}
